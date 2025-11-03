@@ -2,6 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
   "name": "Nobori.ai - Docs",
+  "head": "<link rel=\"stylesheet\" href=\"/docs.css\" />",
   "colors": {
     "primary": "#FF5E00",
     "light": "#FF833D",
