@@ -22,12 +22,31 @@
             "pages": ["index", "quickstart", "development"]
           },
           {
-            "group": "Features",
-            "pages": ["essentials/settings", "essentials/navigation"]
+            "group": "Track",
+            "pages": [
+              "track/dashboard",
+              "track/prompts",
+              "track/competitors"
+            ]
           },
           {
-            "group": "Metrics",
-            "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/reusable-snippets"]
+            "group": "Measure",
+            "pages": [
+              "measure/citations"
+            ]
+          },
+          {
+            "group": "Act",
+            "pages": [
+              "act/get-cited"
+            ]
+          },
+          {
+            "group": "Workspace",
+            "pages": [
+              "essentials/settings",
+              "essentials/navigation"
+            ]
           }
         ]
       },
@@ -40,7 +59,7 @@
             "pages": ["api/overview"]
           },
           {
-            "group": "Coming Soon",
+            "group": "Coming soon",
             "pages": ["api/status", "api/webhooks"]
           }
         ]
