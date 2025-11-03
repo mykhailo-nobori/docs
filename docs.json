@@ -1,5 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
+  "theme": "maple",
   "name": "Nobori.ai - Docs",
   "colors": {
     "primary": "#FF5E00",
