@@ -1,0 +1,3 @@
+/* Only affects accordions wrapped with .tight-accordions on the page */
+.tight-accordions details + details { margin-top: 6px !important; }
+.tight-accordions summary { padding-top: 8px !important; padding-bottom: 8px !important; }
