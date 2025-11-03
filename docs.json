@@ -8,8 +8,8 @@
   },
   "favicon": "/nobori-favicon-dark-32.png",
   "logo": {
-  "light": "/logo/nobori-logo-light (2).png",
-  "dark": "/logo/nobori-logo-light (2).png"
+    "light": "/logo/nobori-logo-light (2).png",
+    "dark": "/logo/nobori-logo-light (2).png"
   },
   "navigation": {
     "tabs": [
@@ -18,51 +18,33 @@
         "groups": [
           {
             "group": "Get started",
-            "pages": [
-              "index",
-              "quickstart",
-              "navigation"
-            ]
+            "pages": ["index", "quickstart", "development"]
           },
           {
             "group": "Features",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
+            "pages": ["essentials/settings", "essentials/navigation"]
           },
           {
             "group": "Metrics",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
+            "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/reusable-snippets"]
+          }
         ]
       },
-       {
+      {
         "tab": "API",
         "hidden": true,
         "groups": [
           {
             "group": "Overview",
-            "pages": [
-              "api/overview"
-            ]
+            "pages": ["api/overview"]
           },
           {
             "group": "Coming Soon",
-            "pages": [
-              "api/status",
-              "api/webhooks"
-            ]
+            "pages": ["api/status", "api/webhooks"]
           }
         ]
       }
     ],
-
     "global": {
       "anchors": [
         { "anchor": "Website", "href": "https://nobori.ai", "icon": "globe" },
@@ -73,33 +55,9 @@
   },
   "navbar": {
     "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@nobori.ai"
-      }
+      { "label": "Support", "href": "mailto:support@nobori.ai" }
     ],
-      "primary": {
+    "primary": {
       "type": "button",
       "label": "Go to Dashboard",
-      "href": "https://app.nobori.ai"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/nobori_ai",
-      "linkedin": "https://linkedin.com/company/nobori"
-    }
-  }
-}
+      "href": "https://app.nobor
