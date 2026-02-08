@@ -14,13 +14,36 @@
     "dark": "/logo/nobori-logo-light (2).png"
   },
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Website",
+          "icon": "globe",
+          "href": "https://nobori.ai"
+        },
+        {
+          "anchor": "App",
+          "icon": "square-arrow-up-right",
+          "href": "https://app.nobori.ai"
+        },
+        {
+          "anchor": "Changelog",
+          "icon": "megaphone",
+          "href": "https://nobori.ai/changelog"
+        }
+      ]
+    },
     "tabs": [
       {
         "tab": "Documentation",
         "groups": [
           {
             "group": "Get started",
-            "pages": ["index", "quickstart", "sidebar-navigation"]
+            "pages": [
+              "index",
+              "quickstart",
+              "sidebar-navigation"
+            ]
           },
           {
             "group": "Track",
@@ -38,12 +61,14 @@
           },
           {
             "group": "Act",
+            "hidden": true,
             "pages": [
               "act/get-cited"
             ]
           },
           {
             "group": "Workspace",
+            "hidden": true,
             "pages": [
               "essentials/settings",
               "essentials/navigation"
@@ -57,22 +82,20 @@
         "groups": [
           {
             "group": "Overview",
-            "pages": ["api/overview"]
+            "pages": [
+              "api/overview"
+            ]
           },
           {
             "group": "Coming soon",
-            "pages": ["api/status", "api/webhooks"]
+            "pages": [
+              "api/status",
+              "api/webhooks"
+            ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        { "anchor": "Website", "href": "https://nobori.ai", "icon": "globe" },
-        { "anchor": "App", "href": "https://app.nobori.ai", "icon": "square-arrow-up-right" },
-        { "anchor": "Changelog", "href": "https://nobori.ai/changelog", "icon": "megaphone" }
-      ]
-    }
+    ]
   },
   "navbar": {
     "links": [
