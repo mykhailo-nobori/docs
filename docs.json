@@ -48,7 +48,7 @@
           {
             "group": "Track",
             "pages": [
-              "track/dashboard",
+              "dashboard",
               "track/prompts",
               "track/competitors"
             ]
