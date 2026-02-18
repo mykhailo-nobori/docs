@@ -44,21 +44,22 @@
             "group": "Track",
             "pages": [
               "dashboard",
-              "track/prompts",
-              "track/competitors"
+              "prompts",
+              "competitors"
             ]
           },
           {
             "group": "Measure",
             "pages": [
-              "measure/citations"
+              "citations"
             ]
           },
           {
-            "group": "Act",
+            "group": "GetCited",
             "hidden": true,
             "pages": [
-              "act/get-cited"
+              "Foundation",
+              "ClusterActions"
             ]
           },
           {
@@ -94,7 +95,10 @@
   },
   "navbar": {
     "links": [
-      { "label": "Support", "href": "mailto:support@nobori.ai" }
+      {
+        "label": "Support",
+        "href": "mailto:support@nobori.ai"
+      }
     ],
     "primary": {
       "type": "button",
@@ -103,7 +107,16 @@
     }
   },
   "contextual": {
-    "options": ["copy", "view", "chatgpt", "claude", "perplexity", "mcp", "cursor", "vscode"]
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
