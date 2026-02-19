@@ -45,6 +45,7 @@
             "pages": [
               "dashboard",
               "prompts",
+              "prompt-details",
               "competitors"
             ]
           },
@@ -55,19 +56,10 @@
             ]
           },
           {
-            "group": "GetCited",
-            "hidden": true,
+            "group": "Get Cited",
             "pages": [
-              "Foundation",
-              "ClusterActions"
-            ]
-          },
-          {
-            "group": "Workspace",
-            "hidden": true,
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "foundation",
+              "cluster-actions"
             ]
           }
         ]

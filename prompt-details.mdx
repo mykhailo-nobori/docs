@@ -1,0 +1,134 @@
+---
+title: Prompt Details
+description: Inspect a single prompt’s visibility over time, compare competitors, review every AI response (executions), and see which sources were cited.
+---
+
+# Prompt Details
+
+Prompt Details is the audit trail for a single prompt.  
+Use it to answer four questions:
+
+- Is the prompt trending up or down in **Visibility Score**?
+- When the prompt triggers, what is our **Position** versus competitors?
+- What did each platform actually answer in each run (**Executions**)?
+- Which sources were used to produce those answers (**Citations**)?
+
+---
+
+## Filters and controls
+
+At the top of the page, you can adjust the scope of what you’re reviewing.
+
+| Control | What it affects |
+|---|---|
+| **Time range** | Changes the window for the chart, competitor rollup, executions, and citations. |
+| **All platforms** | Filters results to a subset of AI platforms. |
+| **Country** | Shows the country the prompt runs from (fixed per prompt). |
+| **Status** | Marks the prompt as Active/Inactive (Active prompts are scheduled). |
+
+---
+
+## Visibility Score chart
+
+The Visibility Score chart shows how often your brand appears for this prompt within the selected time range.
+
+- **Visibility Score** = percentage of prompt runs where your brand is present in the AI answer.
+- Use the **Competitors** toggle to overlay competitor lines on the chart for the same prompt.
+
+<Note>
+If you’re debugging why results changed, start here. The chart tells you *when* visibility shifted; executions and citations tell you *why*.
+</Note>
+
+---
+
+## Competitors table
+
+The Competitors panel summarizes how brands performed for this prompt.
+
+Columns:
+
+- **Position** — average rank/placement for each brand when it appears (lower is better)
+- **Visibility** — percentage of runs where the brand appears for this prompt
+
+This table is the quickest way to see whether you’re losing because:
+- you appear less often (Visibility problem), or
+- you appear lower than others (Position problem)
+
+---
+
+## Executions
+
+Executions is a run-by-run list of AI answers for this prompt.
+
+Each row represents one execution (one platform, one country, one date).
+
+Columns:
+
+- **Execution date** — when the run happened
+- **Response** — preview of the AI answer
+- **Position** — your brand’s position in the answer (when detected)
+- **Mentions** — brands detected in the answer (icons), with a count of total brands found
+- **Mentioned** — whether your brand was mentioned (**Yes/No**)
+
+Use the table to spot patterns like:
+- a platform returning **No response**
+- a platform consistently placing competitors above you
+- runs where your brand is missing even though citations exist
+
+### Execution Details
+
+Click an execution row to open **Execution Details**.
+
+Execution Details shows the full user-facing answer exactly as captured for that run, along with:
+
+- **Status** (e.g., Succeeded)
+- **Platform**
+- **Country**
+
+This is the source of truth when you need to verify what the model actually returned.
+
+---
+
+## Citations
+
+Citations shows the sources AI platforms relied on to answer this prompt.
+
+Each row is a cited URL with aggregated usage in the selected time range.
+
+Columns:
+
+- **URL** — the referenced page
+- **Used** — how many times the URL appeared as a source for this prompt
+- **Platforms** — which AI platforms cited it
+- **Type** — classification of the source (e.g., Publisher)
+- **Mentions** — brands detected in answers that cited this URL
+- **Mentioned** — whether your brand was mentioned in those answers (**Yes/No**)
+
+Why this matters:
+
+- If reputable publishers are cited and you’re not mentioned, you likely have a **content / positioning gap**.
+- If competitor-owned pages dominate citations, you likely have a **coverage gap** (your content isn’t the default reference).
+- If your own domain is cited but your brand isn’t mentioned, you may have a **credit gap** (your content is useful, but your brand identity isn’t reinforced in the page).
+
+---
+
+## Export and search
+
+Use **Search** to filter executions or citations.  
+Use **Export** to download the current view for analysis or reporting.
+
+---
+
+## Next steps
+
+<CardGroup>
+  <Card title="Prompts" href="/prompts">
+    Add, activate, and organize prompts and clusters.
+  </Card>
+  <Card title="Competitors" href="/competitors">
+    Manage competitors used in prompt and dashboard comparisons.
+  </Card>
+  <Card title="Citations" href="/citations">
+    Explore cited pages and domains across all prompts.
+  </Card>
+</CardGroup>

@@ -1,0 +1,180 @@
+---
+title: Prompts
+description: Create clusters and prompts, track visibility and position, and manage active, suggested, and inactive prompts across countries and AI platforms.
+---
+
+# Prompts
+
+The Prompts section is where you define what Nobori.ai measures.
+
+You manage two things:
+
+- **Clusters** — your core offerings (topics)
+- **Prompts** — buyer-style questions AI users ask
+
+This page is also where you monitor **Visibility** and **Position** for each cluster and prompt.
+
+---
+
+## Filters
+
+Use the top-right filters to scope results.
+
+| Filter | What it changes |
+|---|---|
+| **All countries** | Filters results to specific prompt countries. |
+| **All platforms** | Limits results to selected AI platforms. |
+| **Time range** | Controls the reporting window (e.g., last 7 days, last 30 days, last 3 months). |
+
+<Note>
+Filters apply to cluster rollups and prompt-level metrics.
+</Note>
+
+---
+
+## Concepts
+
+### Cluster
+
+A **cluster** is your brand’s core service or product expressed as a main keyword.  
+It groups related buyer prompts around the same commercial offering.
+
+Clusters let you track performance at a topic level instead of only prompt-by-prompt.
+
+### Prompt
+
+A **prompt** is a real user question you want to monitor across AI platforms.  
+Prompts are executed on a schedule and produce visibility data over time.
+
+---
+
+## Cluster list
+
+The left panel lists:
+
+- **All Clusters** — combined view across every cluster
+- Individual clusters — topic-specific views
+
+Each cluster shows roll-up metrics based on the prompts inside it:
+
+- **Visibility** — percentage of prompts where your brand appears
+- **Position** — average ranking position when your brand appears (lower is better)
+
+---
+
+## Prompt tabs
+
+Prompts are organized into three states:
+
+### Active
+
+Active prompts are included in scheduled runs.
+
+Each prompt row includes:
+
+- **Prompt** — the tracked question
+- **Position** — average ranking position for your brand
+- **Visibility** — percentage of runs where your brand appears
+- **Country** — where the prompt is executed from
+- **Created** — when the prompt was added
+
+### Suggested
+
+Suggested prompts are recommendations generated from your current setup.
+
+You can:
+
+- **Activate** to start tracking
+- **Reject** to remove irrelevant prompts
+
+### Inactive
+
+Inactive prompts are excluded from scheduled runs.
+
+Use Inactive to:
+
+- pause prompts without losing context
+- keep your list clean while retaining historical performance
+
+If you **delete** a prompt, its stored data is removed.
+
+---
+
+## Add a cluster
+
+Use **Add Cluster** to create a topic grouping.
+
+You’ll provide:
+
+- **Name** (up to 60 characters)
+- **Country** (where prompts in this cluster will run from)
+
+---
+
+## Add a prompt
+
+Use **Add Prompt** to create a tracked buyer query.
+
+You’ll provide:
+
+- **Prompt text** (up to 200 characters)
+- **Country** (where the prompt runs from)
+- **Cluster** (optional)
+  - If a cluster is selected, the prompt is assigned to it
+  - If you’re in the All Clusters view, prompts may be added to **No Cluster**
+
+Tags are shown as **coming soon**.
+
+---
+
+## Bulk actions
+
+You can update multiple prompts at once.
+
+Select prompts using the checkboxes, then use the bulk action bar to:
+
+- **Assign Cluster** — move selected prompts into a cluster
+- **Deactivate** — stop running selected prompts (moves them to Inactive)
+
+<Note>
+Bulk actions affect only the selected prompts.
+</Note>
+
+---
+
+## Search and export
+
+Use:
+
+- **Search** to find specific prompts
+- **Export** to download prompt-level data for reporting or analysis
+
+---
+
+## Boosting prompts
+
+Clusters and prompts can be boosted to generate action tasks.
+
+Depending on your state, you may see:
+
+- **Boost Prompts** — generate new tasks
+- **View Tasks** — open tasks already generated
+- **Regenerate** — rerun boosting for updated tasks
+
+<CardGroup>
+  <Card title="Cluster Actions" href="/cluster-actions">
+    Learn how boosting works and what tasks Nobori.ai generates.
+  </Card>
+</CardGroup>
+
+---
+
+## Next: Prompt Details
+
+To inspect individual AI responses and sources used, open Prompt Details.
+
+<CardGroup>
+  <Card title="Prompt Details" href="/prompt-details">
+    Review executions (AI answers) and citations (sources used).
+  </Card>
+</CardGroup>

@@ -1,73 +1,208 @@
 ---
 title: Sidebar Navigation
-description: What each section in Nobori.ai does — Dashboard, Prompts, Competitors, Citations, Get Cited, and Settings — plus global filters.
+description: What each section in Nobori.ai does — Track, Measure, Act, and Workspace — plus how global filters affect your views.
 ---
 
-Nobori.ai is organized as **Track → Measure → Act**.  
-Use global filters at the top (Tags, Country, Date range, Platforms) to scope all views.
+Nobori.ai is organized as **Track → Measure → Act**, with workspace settings and billing separated under **Workspace**.
 
-## Global Filters
-- **Tags** — optional prompt grouping  
-- **Country** — market to read/run  
-- **Date range** — 7/30 days or custom  
-- **Platforms** — limit to specific AI models
+Many pages share the same top-bar controls (like **Platforms** and **Date range**), so you can quickly scope what you’re looking at.
 
-<Note>Filters apply to Dashboard, Prompts, Competitors, and Citations.</Note>
+## Global filters
+
+These appear in the top bar on most analytics pages.
+
+- **Platforms** — choose where to measure visibility (e.g., ChatGPT, Google AI Overviews, Perplexity).  
+- **Date range** — common presets like *Last 7 days / Last 30 days / Last 3 months*.  
+- **Country** — shown on Prompt-related views when results depend on location (because prompts run from a selected country).  
+- **Notifications** — currently a placeholder (coming soon).
+
+<Note>
+Not every page has every filter. Prompts and Prompt Details are the most country-dependent views.
+</Note>
+
+---
 
 ## Track
 
 ### Dashboard
-Overview of performance.
-- **Visibility Score** — % of prompts where your brand appears, over time
-- **Competitors** — rank table by visibility
-- **Cited Domains** — domains AI relies on most
+A quick overview of how often your brand appears in AI-generated answers.
+
+What you’ll see:
+- **Visibility score chart** — % of tracked prompts where your brand appears, over time.  
+  - Toggle **Competitors** to overlay competitor lines on the same chart.
+- **Competitors card** — quick comparison table (Position + Visibility) with **Show all** linking to <a href="/competitors">Competitors</a>.
+- **Cited Domains card** — domains AI platforms cite most often, with **Show all** linking to <a href="/citations">Citations</a>.
+
+---
 
 ### Prompts
-Manage and analyze prompts.
-- Tabs: **Active**, **Suggested**, **Inactive**
-- Actions: **Add Prompt**, **Export**, bulk Activate/Deactivate/Delete
-- **Prompt Details**:
-  - visibility chart with competitor toggle
-  - **Executions** — AI responses (status, platform, response link, mentions)
-  - **Citations** — URLs used with columns: *Used*, *Platforms*, *Type* (Publisher/Owned/Competitor/Community/Other), *Mentions*, *Mentioned*
+Where you manage your tracking setup and monitor visibility at the prompt + cluster level.
+
+**Left panel**
+- **All Clusters** + your cluster list.
+- Each cluster represents a core product/service category you want to win.
+
+**Top controls**
+- Search
+- **Export**
+- **Add Prompt**
+- Tabs:
+  - **Active** — prompts currently running
+  - **Suggested** — prompts you can review and activate/reject
+  - **Inactive** — paused prompts (data stays visible)
+
+**Table columns**
+- **Prompt**
+- **Position**
+- **Visibility**
+- **Country**
+- **Created**
+
+**Bulk actions (when selecting prompts)**
+- Assign to a **Cluster**
+- **Deactivate** (and other bulk controls depending on the tab)
+
+**Boost**
+You can Boost prompts in a cluster to generate actions.  
+Those actions appear in <a href="/cluster-actions">Cluster Actions</a>.
+
+---
+
+### Prompt Details
+Deep dive for a single prompt.
+
+What you’ll see:
+- **Visibility score** chart for this prompt, with optional **Competitors** toggle.
+- A **Competitors** table for the same prompt (Position + Visibility).
+- Tabs:
+  - **Executions** — stored model responses per run (date, platform, response, mentions, and whether your brand was mentioned).
+  - **Citations** — pages used as sources, including:
+    - **Used** (how often the URL appeared as a source)
+    - **Platforms** (which AI platforms cited it)
+    - **Type** (Publisher / Owned / Competitor / Community / Other)
+    - **Mentions** (which brands appear in the source context)
+    - **Mentioned** (whether your brand was mentioned)
+
+You can open an execution to view the full answer (Execution Details).
+
+---
 
 ### Competitors
-Add and benchmark brands.
-- Tabs: **Active**, **Suggested** (reject/activate)
-- Actions: **Add Competitor** (Name, Website), **Export**, **Delete**
-- Table shows **Visibility** (sentiment not live)
+Manage the brands you compare against.
+
+Tabs:
+- **Active** — competitors currently tracked
+- **Suggested** — AI-suggested competitors you can **Activate** or **Reject**
+
+Actions:
+- **Add Competitor** (Name + Website)
+- Search
+- **Export**
+
+Active competitor table includes:
+- **Position**
+- **Visibility**
+- **Sentiment** is shown as *soon* (not live yet)
+
+---
+
+### Sentiment *(soon)*
+Placeholder in the sidebar. Not available yet.
+
+---
 
 ## Measure
 
 ### Citations
-Everything AI models cite to answer your prompts.
-- Tabs:
-  - **Cited Pages** — URL-level list (Used count/%, Platforms, Type, Mentions, Mentioned)
-  - **Cited Domains** — domain-level summary
-- Use to identify publishers to contact and owned pages to strengthen
+Everything AI models cite or rely on to answer your tracked prompts.
 
-<Note>Mentions (brand named) and Citations (source used) are different signals.</Note>
+Tabs:
+- **Cited Pages** — URL-level sources used by AI platforms  
+- **Cited Domains** — domain-level summary (usage %)
+
+Columns you’ll commonly see:
+- **Used** — how often a page/domain appears as a source across tracked executions
+- **Platforms** — where it was cited
+- **Type** — source category (Publisher / Owned / Competitor / Community / Other)
+- **Mentions** — which brands appear in the same context
+- **Mentioned** — whether your brand appears on that page/source
+
+<Note>
+A page can be **cited** without mentioning you. “Mentioned” helps you spot sources you should be present on.
+</Note>
+
+---
+
+### AI Bot Analytics *(soon)*
+Placeholder in the sidebar. Not available yet.
+
+---
 
 ## Act
 
-### Get Cited
-Operational outreach workspace.
-- **Contact Publishers** — AI-cited pages missing your brand
-- Actions: **Draft Email**, status pipeline (**Needs Attention → In Progress → Completed → Canceled**)
+### Get Cited (beta)
+Your action workspace for turning insights into execution.
+
+#### Foundation
+A baseline “AI SEO / GEO audit” view that checks things that can block crawling and citations (e.g., robots, sitemap, crawlability).  
+When issues are detected, Foundation creates tasks to fix them and tracks them on a board.
+
+#### Cluster Actions
+A cluster-specific action board generated from **Boost** in Prompts.  
+These actions are tied to buyer-intent prompts and focus on improving visibility via:
+- **Outreach**
+- **Community**
+- **Guest Posts** (when available)
+
+---
+
+### AI-Optimized Site *(soon)*
+Placeholder in the sidebar. Not available yet.
+
+---
 
 ## Workspace
 
 ### Plans & Pricing
-Plan, usage limits (Prompts / Runs / Action Credits), upgrades.
-
-### Support
-Contact support.
+Your subscription plan, usage limits, upgrades, and usage bars (e.g., prompts/runs).
 
 ### Settings
-Tabs:
-- **Company** — company info, members & roles
-- **Brand** — brand name, domain, logo; platforms (ChatGPT, AI Overviews, Perplexity), refresh frequency (3 days / 24 hours), primary country (coming soon)
-- **Account** — profile and appearance (language/locale coming soon)
-- **Billing** — Stripe billing & invoices
-- **Notifications** — placeholder
-- **Integrations** — coming soon
+Workspace administration and product configuration.
+
+Left menu sections:
+- **Company**
+- **Brand**
+- **Account**
+- **Notifications**
+- **Billing (Stripe)**
+- **Integrations (coming soon)**
+
+#### Members & roles (invites)
+You can invite teammates and control what they can access.
+
+Role types:
+- **Company Member**
+  - broader workspace access
+  - can see workspace-level areas like plan/billing (depending on your internal permission model)
+- **Brand Member**
+  - access limited to specific brand(s)
+  - **does not** see **Plans & Pricing**
+  - **does not** have access to the **Billing** page
+
+Invites:
+- Invite via email
+- Choose role type
+- Invite can be pending until accepted
+- Brand Members can be scoped to specific brands
+
+#### Brand settings
+Brand-specific configuration and inputs used to generate better prompts.
+
+Includes:
+- Brand name + Website
+- Brand logo upload
+- **Current Focus** (from onboarding)  
+  Used to generate more relevant **Suggested Prompts** (and improve clustering).
+
+### Support
+Contact support from inside the app.

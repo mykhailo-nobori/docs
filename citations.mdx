@@ -1,1 +1,119 @@
-C
+---
+title: Citations
+description: See which pages and domains AI platforms rely on to answer your prompts. Identify trusted sources, competitor-owned citations, and publisher targets for outreach.
+---
+
+# Citations
+
+Citations shows the sources AI platforms relied on when answering your tracked prompts.
+
+This view is designed for two jobs:
+- **Understand what AI trusts** in your category (the sources it repeatedly pulls from).
+- **Turn citation patterns into action** (what to improve on your site, and which publishers to target).
+
+---
+
+## Filters
+
+Use the filters in the top bar to scope the dataset you’re reviewing.
+
+| Filter | What it does |
+|---|---|
+| **All platforms** | Limit citations to selected AI platforms. |
+| **Time range** | Review citation trends for a specific period (e.g., last 7/30/90 days). |
+
+---
+
+## Two views: Cited Pages vs Cited Domains
+
+<AccordionGroup>
+  <Accordion title="Cited Pages" icon="link">
+    Cited Pages lists individual URLs that AI platforms used as sources.
+
+    Use this view when you want to:
+    - find specific articles that dominate citations for your prompts
+    - see whether those pages lead to **Mentions** of your brand
+    - identify publisher pages where you’re missing (good outreach targets)
+
+    **Columns**
+
+    | Column | Meaning |
+    |---|---|
+    | **URL** | The cited page. |
+    | **Used** | How many times this URL appeared as a source across tracked prompt executions in the selected time range. |
+    | **Platforms** | Which AI platforms cited this page. |
+    | **Type** | Source category (Publisher, Competitor, Owned, Community, Other). |
+    | **Mentions** | Brands detected in the answers that cited this page. |
+    | **Mentioned** | Whether your brand was mentioned (**Yes/No**) in answers that cited this page. |
+
+    <Note>
+      **Mentions** and **Citations** are different signals. A model can cite a source without mentioning your brand, and it can mention your brand without citing your domain.
+    </Note>
+  </Accordion>
+
+  <Accordion title="Cited Domains" icon="globe">
+    Cited Domains aggregates citations by domain instead of individual URLs.
+
+    Use this view when you want to:
+    - see which domains AI platforms rely on most (category authority)
+    - identify systematic gaps (competitor domains cited more than yours)
+    - prioritize outreach targets (publishers that appear across many prompts)
+
+    **Columns**
+
+    | Column | Meaning |
+    |---|---|
+    | **Domain** | The cited domain (e.g., github.com, reddit.com). |
+    | **Used** | How often this domain appeared as a source across tracked prompt executions (shown as a percentage in this view). |
+
+    <Note>
+      Cited Domains is a prioritization tool. Once you find a high-usage domain, switch back to **Cited Pages** to see which exact URLs are driving it.
+    </Note>
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Source types
+
+The **Type** column helps you decide what to do next.
+
+| Type | What it usually means | What to do with it |
+|---|---|---|
+| **Publisher** | Independent editorial sites / review sites drive the answer space. | Strong outreach targets; improve coverage where you’re missing. |
+| **Competitor** | Competitor pages are used as sources. | You likely have a content gap; build/refresh competing pages and comparisons. |
+| **Owned** | Your own domain is being used. | Good sign; ensure pages clearly reinforce your brand and positioning. |
+| **Community** | Forums, community posts, Q&A. | Participate or seed accurate references; consider community strategy. |
+| **Other** | Uncategorized sources (e.g., Wikipedia, docs sites, misc). | Validate whether it’s worth influencing; sometimes it’s non-actionable. |
+
+---
+
+## Search and export
+
+Use **Search** to find a domain or URL quickly.  
+Use **Export** to download the current table view for analysis or reporting.
+
+---
+
+## How to use Citations in practice
+
+1. **Sort by Used** to find the sources that actually shape answers.
+2. Check **Mentioned = No** on publisher pages — those are common “citation-without-credit” gaps.
+3. If competitors dominate citations, treat it as a coverage race: comparison pages, category pages, and “alternatives” content usually moves the needle.
+4. Use domains as a shortlist; use pages to pick exact outreach targets.
+
+---
+
+## Next steps
+
+<CardGroup>
+  <Card title="Dashboard" href="/dashboard">
+    Track Visibility Score over time and see top cited domains.
+  </Card>
+  <Card title="Competitors" href="/competitors">
+    Manage competitor set used in comparisons.
+  </Card>
+  <Card title="Get Cited" href="/foundation">
+    Turn citation gaps into a repeatable action plan.
+  </Card>
+</CardGroup>
