@@ -24,10 +24,10 @@ Actions are scoped to the selected cluster.
 
 ### Filters
 At the top you can filter by:
-- **Type**
+- **Type** (action type)
 - **Priority**
 - **Effort**
-- **Platforms**
+- **Platforms** (where the prompt runs / is tracked)
 
 ### Board columns
 Same workflow as Foundation:
@@ -41,26 +41,26 @@ Same workflow as Foundation:
 
 ## What “Boost Prompts” means
 
-Every action is tied to the **Boost Prompts** in the selected cluster — the buyer-intent questions you want to win.
+Each action is tied to the **Boost Prompts** you selected (the buyer-intent questions you want to win).  
+We show those prompts inside the action so you always know what the work is meant to improve.
 
-Boost prompts are typically questions where people ask AI to:
-- recommend vendors, tools, or providers
-- compare options for specific requirements
-- build a shortlist for a use case
-
-You’ll see the Boost Prompts inside each action so it’s always clear **what the work is meant to improve**.
+Typical Boost prompts look like:
+- “Best [category] tools”
+- “Shortlist vendors for [use case]”
+- “Compare providers for [requirements]”
+- “RFP / proposal guidance for [category]”
 
 ---
 
 ## Action types
 
-You’ll see actions based on what’s enabled for your workspace.
+Below are the most common action types you’ll see. Your workspace may not include all of them yet.
 
 ### Outreach
-**Goal:** get your brand added to pages that already rank and get cited (listicles, directories, high-authority publisher pages).
+**Goal:** get added to pages that already rank and get cited (listicles, directories, high-authority publisher pages).
 
-Includes:
-- an “exact ask” (what to request from the publisher/editor)
+What it usually includes:
+- a clear “exact ask” (what to request from the publisher/editor)
 - proof points to prepare (only verifiable items)
 - paste-ready snippets you can adapt
 - a list of target pages under **Evidence**
@@ -72,11 +72,11 @@ Includes:
 ### Community
 **Goal:** earn crawlable mentions in high-ranking community threads (e.g., Reddit, DEV, LinkedIn discussions) that AI systems may cite.
 
-Includes:
-- specific threads/pages to reply to (linked in **Evidence**)
+What it usually includes:
+- which platforms/threads to reply to
 - guidance on what to write (helpful points, not promotional)
-- one contextual link instruction (when appropriate)
-- phrasing variation guidance (to avoid duplicates across threads)
+- one contextual link instruction (where appropriate)
+- **Evidence** links to the threads/pages we’re targeting
 
 **Success looks like:** helpful replies that get indexed, rank, and become retrieval sources for buyer prompts.
 
@@ -85,17 +85,18 @@ Includes:
 ### Guest Posts
 **Goal:** publish ranking-capable listicle-style posts on third-party domains (often paid placements) to create additional sources that mention your brand.
 
-Includes:
+What it usually includes:
 - a title variation for each placement
 - a short outline (intro angle, criteria, list structure, FAQ)
 - uniqueness rules (avoid duplicated content across placements)
-- estimated price and target country (when provided)
+- estimated price and target country (if available)
+- **Recommended placements** (when provided by your placement provider)
 
 **Success looks like:** multiple independent pages that can rank and be cited for the same cluster topics.
 
 ---
 
-### Owned Listicle
+### Owned Listicle (if available)
 **Goal:** create one canonical “hub” page on your own domain that external placements should link to.
 
 Why it matters:
@@ -107,7 +108,7 @@ Why it matters:
 
 ---
 
-### Free Publish
+### Free Publish (if available)
 **Goal:** publish vendor-intent longform on free platforms (e.g., Medium, LinkedIn, Dev.to) to create additional retrievable sources.
 
 **Success looks like:** more crawlable mentions across platforms that AI systems already ingest.
@@ -116,7 +117,7 @@ Why it matters:
 
 ## Opening an action
 
-Click a card to open details.
+Click a card to open details. You’ll typically see:
 
 ### Description
 What the action is, why it matters for AI retrieval, and what not to do.
@@ -128,10 +129,8 @@ Concrete steps to execute the action. Check them off as you go.
 Pages where your brand is missing or competitors are present.  
 These links explain *why* the action exists.
 
-### Recommended placements (Collaborator Pro)
-Shown when Nobori.ai receives placements from **Collaborator Pro** for a **Guest Posts** action.
-
-Includes:
+### Recommended placements (Guest Posts only)
+A list of suggested domains, often with:
 - estimated price
 - category / vertical
 - country coverage
@@ -151,7 +150,7 @@ What should change when this action is completed (e.g., more third-party sources
    - watch changes in cluster visibility and citations
 
 <Note>
-Want to generate a fresh set of actions after new content or placements go live? Boost the cluster again from <a href="/prompts">Prompts</a>.
+Want to regenerate actions after new content or placements go live? Boost the cluster again from <a href="/prompts">Prompts</a>.
 </Note>
 
 ---
